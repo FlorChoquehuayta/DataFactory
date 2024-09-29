@@ -1,0 +1,9 @@
+{
+	"name": "fchoquehuaytafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2883758d-6a6b-4612-ad46-ad3dfb868535",
+		"tenantId": "9a8cb1d5-2607-4fdf-b40a-c84983eb3e63"
+	}
+}
