@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "fchoquehuaytafactory"
+		},
+		"AzureDatabricks_DataFactory_accessToken": {
+			"value": ""
+		},
+		"Blob_Input_connectionString": {
+			"value": ""
+		},
+		"AzureDatabricks_DataFactory_properties_typeProperties_existingClusterId": {
+			"value": "1004-232624-higbt2lj"
+		}
+	}
+}
