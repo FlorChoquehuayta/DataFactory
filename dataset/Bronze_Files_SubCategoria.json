@@ -1,0 +1,24 @@
+{
+	"name": "Bronze_Files_SubCategoria",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Blob_Input",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "SubCategoria.csv",
+				"folderPath": "bronze",
+				"container": "lakehouse"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

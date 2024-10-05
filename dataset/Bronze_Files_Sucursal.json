@@ -1,0 +1,24 @@
+{
+	"name": "Bronze_Files_Sucursal",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Blob_Input",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Sucursal.csv",
+				"folderPath": "bronze",
+				"container": "lakehouse"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"name": "Bronze_Files_Producto",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Blob_Input",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Producto.csv",
+				"folderPath": "bronze",
+				"container": "lakehouse"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
