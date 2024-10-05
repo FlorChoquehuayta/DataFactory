@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Input_to_Bronze",
+				"name": "Input_to_Bronze_Categoria",
 				"description": "Mueve archivos de carpeta input a bronze",
 				"type": "Copy",
 				"dependsOn": [],
@@ -27,11 +27,37 @@
 							"type": "DelimitedTextReadSettings"
 						}
 					},
-					"enableStaging": false
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings",
+							"copyBehavior": "PreserveHierarchy"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".csv"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
 				},
 				"inputs": [
 					{
-						"referenceName": "Input_Files",
+						"referenceName": "Input_Files_Categoria",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "Bronze_Files_Categoria",
 						"type": "DatasetReference"
 					}
 				]

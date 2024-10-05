@@ -1,5 +1,5 @@
 {
-	"name": "Input_Files_Categoria",
+	"name": "Bronze_Files_Categoria",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "Blob_Input",
@@ -11,23 +11,14 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": "Categoria.csv",
-				"folderPath": "input",
+				"folderPath": "bronze",
 				"container": "lakehouse"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
-			"firstRowAsHeader": true,
+			"firstRowAsHeader": false,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "Cod_Categoria",
-				"type": "String"
-			},
-			{
-				"name": "Nombre",
-				"type": "String"
-			}
-		]
+		"schema": []
 	}
 }
