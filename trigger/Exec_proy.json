@@ -1,0 +1,24 @@
+{
+	"name": "Exec_proy",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_aa_executeproy",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2024-10-04T04:06:00",
+				"timeZone": "SA Pacific Standard Time"
+			}
+		}
+	}
+}
